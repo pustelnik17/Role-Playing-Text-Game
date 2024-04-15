@@ -38,3 +38,6 @@ The story should gradually increase in intensity, climaxing in a pirate attack o
 My first command is “wake up”"""
 response = geminiModel.generate_content(firstPrompt)
 print(response.text)
+
+while(True):
+    print(geminiModel.generate_content(input("> ")).text)
